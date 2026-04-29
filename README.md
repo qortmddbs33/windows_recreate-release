@@ -4,7 +4,7 @@
 
 ## 📥 다운로드
 
-**최신 버전**: [v1.5.4](https://github.com/qortmddbs33/windows_recreate-release/releases/latest)
+**최신 버전**: [v1.5.5](https://github.com/qortmddbs33/windows_recreate-release/releases/latest)
 
 [![Download](https://img.shields.io/badge/다운로드-DW__IDS__PCSCAN.exe-blue?style=for-the-badge&logo=windows)](https://github.com/qortmddbs33/windows_recreate-release/releases/latest/download/DW_IDS_PCSCAN.exe)
 
@@ -60,24 +60,20 @@
 - **용량**: 약 163MB
 - **권한**: 일부 기능은 관리자 권한 필요
 
-## 📝 최신 릴리즈 노트 (v1.5.4)
+## 📝 릴리즈 노트
 
-### 🎉 업데이트 UI 개선
+### v1.5.5 (최신)
+#### 🔗 문의하기 링크 업데이트
+- 새 지원 페이지로 링크 변경
+- **변경**: https://assetify-desk-main.vercel.app/
+- 프로그램 내 "문의하기" 버튼 및 README 링크 모두 업데이트
 
-#### 주요 변경사항
+### v1.5.4
+#### 🎉 업데이트 UI 개선
 - **자동 팝업 제거**: 더 이상 업데이트 다이얼로그가 자동으로 뜨지 않습니다
 - **하단 상태바 추가**: 업데이트 상태를 하단에서 확인할 수 있습니다
 - **클릭으로 업데이트**: 새 버전 사용 가능 시 메시지를 클릭하여 즉시 업데이트 가능
 - **오류 표시**: 업데이트 확인 실패 시 하단에 오류 메시지 표시
-
-#### 업데이트 상태 메시지 예시
-- ✅ "최신 버전입니다 (v1.5.4)"
-- ⚠️ "새 버전 사용 가능: v1.5.5 (현재: v1.5.4) - 클릭하여 업데이트"
-- ❌ "업데이트 확인 실패: [오류 메시지]"
-
-#### 기술적 개선
-- `AsyncRelayCommand` 추가: 비동기 작업 지원
-- `InverseBoolConverter` 추가: UI 바인딩 개선
 
 ## 💬 문의하기
 
@@ -85,6 +81,6 @@
 
 ---
 
-**버전**: v1.5.4  
+**버전**: v1.5.5  
 **라이선스**: Proprietary  
 **© 2026 대웅그룹**
