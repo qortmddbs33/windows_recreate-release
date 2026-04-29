@@ -4,7 +4,7 @@
 
 ## 📥 다운로드
 
-**최신 버전**: [v1.5.6](https://github.com/qortmddbs33/windows_recreate-release/releases/latest)
+**최신 버전**: [v1.5.7](https://github.com/qortmddbs33/windows_recreate-release/releases/latest)
 
 [![Download](https://img.shields.io/badge/다운로드-DW__IDS__PCSCAN.exe-blue?style=for-the-badge&logo=windows)](https://github.com/qortmddbs33/windows_recreate-release/releases/latest/download/DW_IDS_PCSCAN.exe)
 
@@ -63,7 +63,13 @@
 
 ## 📝 릴리즈 노트
 
-### v1.5.6 (최신)
+### v1.5.7 (최신)
+#### 🔧 업데이트 체크 기능 수정
+- **버그 수정**: 업데이트 확인이 작동하지 않던 문제 해결
+- 소스 레포 대신 배포 레포를 확인하도록 수정
+- 이제 새 버전이 출시되면 하단 상태바에 정상적으로 표시됩니다
+
+### v1.5.6
 #### 🎨 이벤트 로그 UI 개선
 - **클릭으로 세부 내용 확인**: 마우스 오버 툴팁 대신 클릭으로 메시지 전체 보기
 - **화살표 아이콘**: ▶ (접힘) / ▼ (펼침) 상태 표시
@@ -88,4 +94,4 @@
 
 ---
 
-**버전**: v1.5.6  
+**버전**: v1.5.7  
