@@ -81,7 +81,7 @@
 
 ## 💬 문의하기
 
-문제가 발생하거나 문의사항이 있으시면 [여기](https://assetify-desk.vercel.app/)를 클릭해주세요.
+문제가 발생하거나 문의사항이 있으시면 [여기](https://assetify-desk-main.vercel.app/)를 클릭해주세요.
 
 ---
 
