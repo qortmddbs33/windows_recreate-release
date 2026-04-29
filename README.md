@@ -4,7 +4,7 @@
 
 ## 📥 다운로드
 
-**최신 버전**: [v1.5.5](https://github.com/qortmddbs33/windows_recreate-release/releases/latest)
+**최신 버전**: [v1.5.6](https://github.com/qortmddbs33/windows_recreate-release/releases/latest)
 
 [![Download](https://img.shields.io/badge/다운로드-DW__IDS__PCSCAN.exe-blue?style=for-the-badge&logo=windows)](https://github.com/qortmddbs33/windows_recreate-release/releases/latest/download/DW_IDS_PCSCAN.exe)
 
@@ -44,6 +44,7 @@
 ### 📋 이벤트 로그
 - Windows 이벤트 로그 조회
 - 오류 및 경고 이벤트 필터링
+- **클릭으로 세부 내용 확인** (v1.5.6 신규)
 
 ## 🚀 사용 방법
 
@@ -62,7 +63,13 @@
 
 ## 📝 릴리즈 노트
 
-### v1.5.5 (최신)
+### v1.5.6 (최신)
+#### 🎨 이벤트 로그 UI 개선
+- **클릭으로 세부 내용 확인**: 마우스 오버 툴팁 대신 클릭으로 메시지 전체 보기
+- **화살표 아이콘**: ▶ (접힘) / ▼ (펼침) 상태 표시
+- **깔끔한 UI**: 필요한 항목만 펼쳐서 확인 가능
+
+### v1.5.5
 #### 🔗 문의하기 링크 업데이트
 - 새 지원 페이지로 링크 변경
 - **변경**: https://assetify-desk-main.vercel.app/
@@ -81,4 +88,4 @@
 
 ---
 
-**버전**: v1.5.5  
+**버전**: v1.5.6  
