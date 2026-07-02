@@ -4,7 +4,7 @@
 
 ## 📥 다운로드
 
-**최신 버전**: [v2.0.0](https://github.com/qortmddbs33/windows_recreate/releases/tag/v2.0.0)
+**최신 버전**: [v2.0.1](https://github.com/qortmddbs33/windows_recreate/releases/tag/v2.0.1)
 
 [![Download](https://img.shields.io/badge/다운로드-DW__IDS__PCSCAN.exe-blue?style=for-the-badge&logo=windows)](https://github.com/qortmddbs33/windows_recreate-release/releases/latest/download/DW_IDS_PCSCAN.exe)
 
@@ -47,26 +47,25 @@
 
 ## 🚀 사용 방법
 
-1. **다운로드**: 위 버튼을 클릭하여 `DW_IDS_PCSCAN.exe` 다운로드
-2. **실행**: 다운로드한 파일을 더블클릭
-3. **스캔**: 프로그램이 자동으로 시스템을 분석합니다
+1. **.NET 8 Desktop Runtime 설치** (미설치 시 실행 안 됨): [다운로드](https://dotnet.microsoft.com/download/dotnet/8.0/runtime) → "Desktop Runtime" 선택
+2. **다운로드**: 위 버튼을 클릭하여 `DW_IDS_PCSCAN.exe` 다운로드
+3. **실행**: 다운로드한 파일을 더블클릭
+4. **스캔**: 프로그램이 자동으로 시스템을 분석합니다
 
 > ⚠️ **주의**: 일부 백신 프로그램에서 오탐이 발생할 수 있습니다. 안전한 파일이므로 예외 처리해주세요.
 
 ## 📦 시스템 요구사항
 
 - **OS**: Windows 10/11 (64비트)
-- **.NET**: 포함됨 (별도 설치 불필요)
-- **용량**: 약 163MB
+- **.NET**: .NET 8 Desktop Runtime 별도 설치 필요 (경량화로 런타임 미포함)
+- **용량**: 약 10MB
 - **권한**: 일부 기능은 관리자 권한 필요
 
 ## 📝 릴리즈 노트
 
-- 자산등록 탭을 자산실사로 개편 (문구 재정리, 입력 placeholder, 안내 문구 위치 조정)
-- 문의하기 버튼 링크를 swportal 문의 페이지로 변경
-- 창 크기를 915x660으로 고정 (리사이즈 비활성화)
-- 시스템 모니터: CPU 클럭 표시 제거 (터보 부스트 시 값이 비정상적으로 높게 계산되는 문제) — 점유율만 표시
-- 스크롤바를 오버레이 방식의 슬림 다크 스타일로 변경해 값이 잘리는 문제 해결
+- 경량 배포로 전환 (framework-dependent) — self-contained 런타임 내장 방식 제거
+- 파일 용량 약 163MB → 약 9.5MB로 대폭 축소
+- 대상 PC에 .NET 8 Desktop Runtime 설치 필요: https://dotnet.microsoft.com/download/dotnet/8.0/runtime
 
 ## 💬 문의하기
 
@@ -74,6 +73,6 @@
 
 ---
 
-**버전**: v2.0.0
-**릴리즈 날짜**: 2026-07-02T02:16:00Z
+**버전**: v2.0.1
+**릴리즈 날짜**: 2026-07-02T02:26:03Z
 **라이선스**: Proprietary
