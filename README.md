@@ -4,7 +4,7 @@
 
 ## 📥 다운로드
 
-**최신 버전**: [v2.0.1](https://github.com/qortmddbs33/windows_recreate/releases/tag/v2.0.1)
+**최신 버전**: [v2.0.2](https://github.com/qortmddbs33/windows_recreate/releases/tag/v2.0.2)
 
 [![Download](https://img.shields.io/badge/다운로드-DW__IDS__PCSCAN.exe-blue?style=for-the-badge&logo=windows)](https://github.com/qortmddbs33/windows_recreate-release/releases/latest/download/DW_IDS_PCSCAN.exe)
 
@@ -63,9 +63,10 @@
 
 ## 📝 릴리즈 노트
 
-- 경량 배포로 전환 (framework-dependent) — self-contained 런타임 내장 방식 제거
-- 파일 용량 약 163MB → 약 9.5MB로 대폭 축소
-- 대상 PC에 .NET 8 Desktop Runtime 설치 필요: https://dotnet.microsoft.com/download/dotnet/8.0/runtime
+## 변경사항
+- 자산실사 안내 문구에 공용PC 이름 표기 규칙 추가: `용도_담당자이름_공용`
+- 등록완료 팝업에 재등록 시 최신화된다는 안내 문구 추가
+- 안내 문구가 늘어나며 정보 카드가 하단에서 잘리던 레이아웃 문제 수정
 
 ## 💬 문의하기
 
@@ -73,6 +74,6 @@
 
 ---
 
-**버전**: v2.0.1
-**릴리즈 날짜**: 2026-07-02T02:26:03Z
+**버전**: v2.0.2
+**릴리즈 날짜**: 2026-07-07T02:19:40Z
 **라이선스**: Proprietary
