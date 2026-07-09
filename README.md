@@ -4,7 +4,7 @@
 
 ## 📥 다운로드
 
-**최신 버전**: [v2.0.2](https://github.com/qortmddbs33/windows_recreate/releases/tag/v2.0.2)
+**최신 버전**: [v2.1.1](https://github.com/qortmddbs33/windows_recreate/releases/tag/v2.1.1)
 
 [![Download](https://img.shields.io/badge/다운로드-DW__IDS__PCSCAN.exe-blue?style=for-the-badge&logo=windows)](https://github.com/qortmddbs33/windows_recreate-release/releases/latest/download/DW_IDS_PCSCAN.exe)
 
@@ -64,9 +64,12 @@
 ## 📝 릴리즈 노트
 
 ## 변경사항
-- 자산실사 안내 문구에 공용PC 이름 표기 규칙 추가: `용도_담당자이름_공용`
-- 등록완료 팝업에 재등록 시 최신화된다는 안내 문구 추가
-- 안내 문구가 늘어나며 정보 카드가 하단에서 잘리던 레이아웃 문제 수정
+- 자산실사 탭 진입 시 실사 유의사항 안내 팝업 표시 (자산번호/법인명/부서·이름·이메일/공용PC 이름·이메일 안내)
+- 안내 문구가 늘어나며 하드웨어 정보 카드와 겹쳐 잘리던 문제 수정 (GPU·저장장치·MAC 표시 제거, 수집·전송은 유지)
+- 등록 성공/실패 안내 문구 개선 (실패 시 네트워크 확인 및 자산관리파트 문의 안내로 구체화)
+- 라이트 코퍼레이트 UI 전면 개편 — 다크 네이비 → 화이트/네이비 액센트 테마 전환
+- 사이드바/헤더/카드 아이콘을 이모지에서 벡터 아이콘으로 교체
+- 자산실사 입력폼에 이메일 필드 추가, 배터리 교체 권고 기준 75%→65% 조정
 
 ## 💬 문의하기
 
@@ -74,6 +77,6 @@
 
 ---
 
-**버전**: v2.0.2
-**릴리즈 날짜**: 2026-07-07T02:19:40Z
+**버전**: v2.1.1
+**릴리즈 날짜**: 2026-07-09T01:23:59Z
 **라이선스**: Proprietary
