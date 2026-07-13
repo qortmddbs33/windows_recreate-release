@@ -4,7 +4,7 @@
 
 ## 📥 다운로드
 
-**최신 버전**: [v2.1.2](https://github.com/qortmddbs33/windows_recreate/releases/tag/v2.1.2)
+**최신 버전**: [v2.1.3](https://github.com/qortmddbs33/windows_recreate/releases/tag/v2.1.3)
 
 [![Download](https://img.shields.io/badge/다운로드-DW__IDS__PCSCAN.exe-blue?style=for-the-badge&logo=windows)](https://github.com/qortmddbs33/windows_recreate-release/releases/latest/download/DW_IDS_PCSCAN.exe)
 
@@ -64,9 +64,9 @@
 ## 📝 릴리즈 노트
 
 ## 변경사항
-- 자산번호를 선택 입력으로 변경 — PC 스티커가 없거나 훼손된 경우 공란으로 실사 진행 가능 (백엔드는 시리얼 기준 upsert)
-- Windows 프로젝트를 저장소 monorepo 구조(windows/)로 이동 (기능 변화 없음)
-- 운영 포털 전송 빌드 스위치 정비 (PortalProd) — 실사 데이터가 정상적으로 운영 포털에 전달되도록 확인
+- 자산실사: 겸직 중이거나 쉐어드 부서에서 근무하는 경우 체크박스 체크 후 원소속법인을 선택할 수 있는 기능 추가 (windows/mac 공용)
+- 자산실사 안내 팝업 및 화면 내 안내 카드에 겸직/쉐어드 관련 안내 항목 추가
+- windows: 신규 입력 항목이 창 높이에 가려 보이지 않던 문제 수정 (창 높이 확장)
 
 ## 💬 문의하기
 
@@ -74,6 +74,6 @@
 
 ---
 
-**버전**: v2.1.2
-**릴리즈 날짜**: 2026-07-09T04:19:54Z
+**버전**: v2.1.3
+**릴리즈 날짜**: 2026-07-13T03:31:49Z
 **라이선스**: Proprietary
