@@ -1,16 +1,20 @@
-# 대웅그룹 PC 스캐닝 프로그램
+# 대웅그룹 PC 자산관리 프로그램
 
-> Windows PC의 시스템 정보, 보안 제품, 설치된 프로그램 등을 스캔하고 모니터링하는 통합 관리 도구
+> Windows PC 스캐닝 · macOS 자산실사 — 시스템 정보/보안/설치 프로그램을 스캔하고 자산을 실사하는 통합 도구
 
 ## 📥 다운로드
 
-**최신 버전**: [v2.1.3](https://github.com/qortmddbs33/windows_recreate/releases/tag/v2.1.3)
+**최신 버전**: [v2.1.4](https://github.com/qortmddbs33/windows_recreate/releases/tag/v2.1.4)
 
-[![Download](https://img.shields.io/badge/다운로드-DW__IDS__PCSCAN.exe-blue?style=for-the-badge&logo=windows)](https://github.com/qortmddbs33/windows_recreate-release/releases/latest/download/DW_IDS_PCSCAN.exe)
+### 🪟 Windows (PC 스캐닝 프로그램)
+[![Windows](https://img.shields.io/badge/다운로드-DW__IDS__PCSCAN.exe-blue?style=for-the-badge&logo=windows)](https://github.com/qortmddbs33/windows_recreate-release/releases/latest/download/DW_IDS_PCSCAN.exe)
+
+### 🍎 macOS (자산실사, Apple Silicon)
+[![macOS](https://img.shields.io/badge/다운로드-macOS_ARM64_.dmg-black?style=for-the-badge&logo=apple)](https://github.com/qortmddbs33/windows_recreate-release/releases/latest/download/DW_IDS_AssetAudit-macOS-arm64.dmg)
 
 ## ✨ 주요 기능
 
-### 🖥 시스템 모니터
+### 🖥 시스템 모니터 (Windows)
 - **CPU**: 코어별 점유율 + 실시간 클럭 표시
 - **GPU**: 엔진별 점유율 (3D, VideoEncode, VideoDecode, Compute, Copy)
 - **메모리**: 사용량 및 여유 공간 실시간 모니터링
@@ -18,55 +22,56 @@
 - **네트워크**: 실시간 업로드/다운로드 속도
 - **배터리**: 수명, 사이클 수, 설계/최대충전 용량 비교
 
-### ⚡ 프로세스 관리
+### ⚡ 프로세스 관리 (Windows)
 - 실행 중인 프로세스 목록 및 리소스 사용량 확인
 - 프로세스 종료 기능
 
-### 💾 RAM 사용량 분석
+### 💾 RAM 사용량 분석 (Windows)
 - 프로세스별 메모리 사용량 상세 분석
 - 메모리 최적화 제안
 
-### 🗑 불필요 파일 제거
-- 임시 파일, 캐시 파일 자동 탐지
-- 안전한 삭제 기능
-- 디스크 공간 확보
+### 🗑 불필요 파일 제거 (Windows)
+- 임시 파일, 캐시 파일 자동 탐지 및 안전한 삭제
 
-### 🛡 설치된 프로그램 관리
-- 모든 설치된 프로그램 목록 표시
-- 화이트리스트 기반 보안 검사
-- 설치 금지 프로그램 자동 탐지
+### 🛡 설치된 프로그램 관리 (Windows·macOS)
+- 설치된 프로그램 목록 표시 및 화이트리스트 기반 보안 검사
 - 보안 제품 설치 여부 확인
 
-### 🔧 드라이버 확인
-- 시스템 드라이버 목록 및 상태 확인
-- 문제있는 드라이버 탐지
-
-### 📋 이벤트 로그
-- Windows 이벤트 로그 조회
-- 오류 및 경고 이벤트 필터링
+### 📋 자산실사 (Windows·macOS)
+- 하드웨어 정보 자동 수집 + 사용자 정보 입력 후 포털로 등록
+- 겸직/쉐어드 근무 시 원소속법인 선택 지원
 
 ## 🚀 사용 방법
 
+### Windows
 1. **.NET 8 Desktop Runtime 설치** (미설치 시 실행 안 됨): [다운로드](https://dotnet.microsoft.com/download/dotnet/8.0/runtime) → "Desktop Runtime" 선택
-2. **다운로드**: 위 버튼을 클릭하여 `DW_IDS_PCSCAN.exe` 다운로드
-3. **실행**: 다운로드한 파일을 더블클릭
-4. **스캔**: 프로그램이 자동으로 시스템을 분석합니다
+2. 위 Windows 버튼으로 `DW_IDS_PCSCAN.exe` 다운로드 후 실행
 
-> ⚠️ **주의**: 일부 백신 프로그램에서 오탐이 발생할 수 있습니다. 안전한 파일이므로 예외 처리해주세요.
+### macOS (Apple Silicon)
+1. 위 macOS 버튼으로 `.dmg` 다운로드 → 앱을 Applications 로 드래그
+2. 첫 실행 시 "확인되지 않은 개발자" 경고가 뜨면, 터미널에서 아래 실행 후 다시 열기:
+   `xattr -dr com.apple.quarantine "/Applications/대웅그룹 MAC OS 전용 자산실사 프로그램.app"`
+
+> ⚠️ **주의**: 일부 백신에서 오탐이 발생할 수 있습니다. 안전한 파일이므로 예외 처리해주세요.
 
 ## 📦 시스템 요구사항
 
-- **OS**: Windows 10/11 (64비트)
-- **.NET**: .NET 8 Desktop Runtime 별도 설치 필요 (경량화로 런타임 미포함)
-- **용량**: 약 10MB
-- **권한**: 일부 기능은 관리자 권한 필요
+- **Windows**: Windows 10/11 (64비트), .NET 8 Desktop Runtime 별도 설치
+- **macOS**: Apple Silicon(ARM64), macOS 11 이상
 
 ## 📝 릴리즈 노트
 
 ## 변경사항
-- 자산실사: 겸직 중이거나 쉐어드 부서에서 근무하는 경우 체크박스 체크 후 원소속법인을 선택할 수 있는 기능 추가 (windows/mac 공용)
-- 자산실사 안내 팝업 및 화면 내 안내 카드에 겸직/쉐어드 관련 안내 항목 추가
-- windows: 신규 입력 항목이 창 높이에 가려 보이지 않던 문제 수정 (창 높이 확장)
+- **macOS**: 부서·이름 등 입력란에 한글을 입력할 때 조합 중인 **마지막 글자가 잘리던 문제 수정**
+  - 원인: Avalonia의 TwoWay 텍스트 바인딩이 매 입력(keystroke)마다 소스로 값을 되돌려 쓰면서(write-back) macOS IME 조합(preedit) 세션을 리셋 → 아직 확정되지 않은 마지막 글자가 유실
+  - 조치: 입력란(자산번호·부서·이름·이메일) 바인딩을 `UpdateSourceTrigger=LostFocus`로 변경(포커스 이탈, 즉 조합 확정 후에만 반영). 등록 버튼은 항상 활성 + 클릭 시 검증으로 변경해 마지막 필드 입력 직후에도 정상 동작.
+- **Windows**: 변경 없음 (2.1.3 유지)
+
+## 첨부 파일
+- `Daewoong_AssetAudit-macOS-arm64-v2.1.4.dmg` — **macOS 자산실사** (Apple Silicon/ARM64 전용) · 운영 포털 전송본
+  - ad-hoc 서명이라 첫 실행 시 Gatekeeper 경고가 뜹니다. DMG 안의 **"❗️먼저 읽어주세요 — 실행 방법.txt"** 안내(터미널 `xattr` / 우클릭→열기 / 시스템 설정)에 따라 실행해 주세요.
+- `Daewoong_PC_Scan-v2.1.3.exe` — **Windows PC 스캐닝 프로그램** (v2.1.3, 이번 릴리즈에서 변경 없음)
+
 
 ## 💬 문의하기
 
@@ -74,6 +79,6 @@
 
 ---
 
-**버전**: v2.1.3
-**릴리즈 날짜**: 2026-07-13T03:31:49Z
+**버전**: v2.1.4
+**릴리즈 날짜**: 2026-07-14T07:44:10Z
 **라이선스**: Proprietary
