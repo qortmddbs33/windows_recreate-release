@@ -4,7 +4,7 @@
 
 ## 📥 다운로드
 
-**최신 버전**: [v2.1.4](https://github.com/qortmddbs33/windows_recreate/releases/tag/v2.1.4)
+**최신 버전**: [v2.1.5](https://github.com/qortmddbs33/windows_recreate/releases/tag/v2.1.5)
 
 ### 🪟 Windows (PC 스캐닝 프로그램)
 [![Windows](https://img.shields.io/badge/다운로드-DW__IDS__PCSCAN.exe-blue?style=for-the-badge&logo=windows)](https://github.com/qortmddbs33/windows_recreate-release/releases/latest/download/DW_IDS_PCSCAN.exe)
@@ -61,24 +61,41 @@
 
 ## 📝 릴리즈 노트
 
-## 변경사항
-- **macOS**: 부서·이름 등 입력란에 한글을 입력할 때 조합 중인 **마지막 글자가 잘리던 문제 수정**
-  - 원인: Avalonia의 TwoWay 텍스트 바인딩이 매 입력(keystroke)마다 소스로 값을 되돌려 쓰면서(write-back) macOS IME 조합(preedit) 세션을 리셋 → 아직 확정되지 않은 마지막 글자가 유실
-  - 조치: 입력란(자산번호·부서·이름·이메일) 바인딩을 `UpdateSourceTrigger=LostFocus`로 변경(포커스 이탈, 즉 조합 확정 후에만 반영). 등록 버튼은 항상 활성 + 클릭 시 검증으로 변경해 마지막 필드 입력 직후에도 정상 동작.
-- **Windows**: 변경 없음 (2.1.3 유지)
+## 네트워크 미연결 시 MAC 주소가 빈 채로 등록되던 문제 수정
 
-## 첨부 파일
-- `Daewoong_AssetAudit-macOS-arm64-v2.1.4.dmg` — **macOS 자산실사** (Apple Silicon/ARM64 전용) · 운영 포털 전송본
-  - ad-hoc 서명이라 첫 실행 시 Gatekeeper 경고가 뜹니다. DMG 안의 **"❗️먼저 읽어주세요 — 실행 방법.txt"** 안내(터미널 `xattr` / 우클릭→열기 / 시스템 설정)에 따라 실행해 주세요.
-- `Daewoong_PC_Scan-v2.1.3.exe` — **Windows PC 스캐닝 프로그램** (v2.1.3, 이번 릴리즈에서 변경 없음)
+랜선이 연결되지 않았거나 Wi-Fi에 접속되지 않은 상태로 프로그램을 실행하면
+MAC 주소가 수집되지 않고 빈 값으로 등록되던 문제를 수정했습니다.
+Windows·macOS 자산실사 양쪽 모두 적용됩니다.
+
+### MAC 주소 수집 3단 폴백
+
+앞 단계에서 못 찾으면 다음 단계로 넘어갑니다.
+
+**Windows**
+1. IP가 구성된 어댑터 (실사용 중인 NIC)
+2. 물리 어댑터 — 연결 여부와 무관하게 읽힘 (VMware/Hyper-V 등 가상 NIC 제외)
+3. NetworkInterface — 보안 SW로 WMI 자체가 막힌 경우의 최후 수단
+
+**macOS**
+1. IP가 할당된 인터페이스
+2. en* 물리 인터페이스 (주 인터페이스 en0을 첫 항목으로 정렬)
+3. 가상 인터페이스만 제외한 전부
+
+### 그 외
+
+- 표기를 AA:BB:CC:DD:EE:FF 로 통일, 중복·무의미 값 제거
+- 등록 직전 MAC이 비어 있으면 재수집하고, 그래도 없으면 사용자에게 확인 후 진행
+- MAC 미수집 시 화면에 공란 대신 "(확인 불가 — 네트워크 연결 후 다시 실행 필요)" 표시
+- 운영 포털 도메인 변경 (assetify-desk.vercel.app) — 기존 배포본도 리다이렉트로 계속 동작
+- 앱과 포털 사이 공유키를 소스 코드에서 제거하고 빌드 시 실행 파일에 내장하는 방식으로 전환
 
 
 ## 💬 문의하기
 
-문제가 발생하거나 문의사항이 있으시면 [여기](https://swportal.vercel.app/request)를 클릭해주세요.
+문제가 발생하거나 문의사항이 있으시면 [여기](https://assetify-desk.vercel.app/request)를 클릭해주세요.
 
 ---
 
-**버전**: v2.1.4
-**릴리즈 날짜**: 2026-07-14T07:48:10Z
+**버전**: v2.1.5
+**릴리즈 날짜**: 2026-08-21T04:19:14Z
 **라이선스**: Proprietary
